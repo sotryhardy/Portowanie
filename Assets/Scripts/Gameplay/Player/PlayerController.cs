@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
 
         Instance = this;
         characterController = GetComponent<CharacterController>();
+        Steamworks.SteamUserStats.SetAchievement("playercontrolled");
     }
 
     private void Update()
